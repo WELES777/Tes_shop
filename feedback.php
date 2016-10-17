@@ -16,8 +16,8 @@ if ($_POST["send_message"])
     $error[] = "Posaj swój E-mail"; 
   }
    
-  if (!$_POST["feed_subject"]) $error[] = "Podaj tytuł lista!";  
-  if (!$_POST["feed_text"]) $error[] = "Podaj treść lista!";  
+  if (!$_POST["feed_subject"]) $error[] = "Podaj tytuł listy!";  
+  if (!$_POST["feed_text"]) $error[] = "Podaj treść listy!";  
   
   if (strtolower($_POST["reg_captcha"]) != $_SESSION['img_captcha'])
   {
